@@ -1,0 +1,23 @@
+// Module 1:
+String interpolation: It allows to render the value of a property in the template.
+
+Two-way binding: Through this we can update the value of property of the class and it
+will update the value of this prop in any place were is used.
+
+ngIf: It allows us to render conditional content. We can use the else statement to render
+content when the condition is false and we would need to use an ng-template to render the
+content but also we will need to specify an id for the tempalte.
+  When the condition is true it will automatically call the 'then' template which is the
+template where we call the ngIf directive.
+
+ngFor: This directive allows to iterate through an array and render its content in the
+template. The structure is the following one: *ngFor:"let myObj of collection".
+ We can also get the index (position of the element in the array) using the prop 'index'.
+ To do this we would do the following: *ngFor:"let myObj of collection; index as i".
+
+Interface: Through this we can specify the properties of an object but also the type of
+each property. This allows to avoid problems of objects recieving invalid data.
+
+NgSwitch: This allows to handle multiple conditions under. To handle each case we would use
+*NgSwitchCase followed by the condition, and if none of the cases are match we would use
+*NgSwitchDefault to render something if it failed.
