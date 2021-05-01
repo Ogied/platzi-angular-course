@@ -6,6 +6,10 @@
 <!-- String interpolation: It allows to render the value of a property in the template -->
 {{ title }}
 
+ <!-- Input used for the pipe demo -->
+<input type="number" [(ngModel)]="power">
+{{ power | exponential }}
+
 <div *ngIf="title === 'ogied'">
   this is ogied
 </div>

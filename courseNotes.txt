@@ -42,3 +42,12 @@ Component Lifecycle:
  - NgOnInit
  - NgDoCheck (Custom NgOnChanges)
  - NgOnDestroy
+
+// Modulo 3
+
+Pipes: They are another angular feature and they help us to transform text, numbers or dates.
+ Angular provides built-in pipes such as dates, uppercase and currency.
+
+Directive: Help us to modify how our element behaves and also we can modify something in the
+DOM.
+ It's not a good practice to dynamically modify the DOM since we have the Data binding.
