@@ -21,3 +21,24 @@ each property. This allows to avoid problems of objects recieving invalid data.
 NgSwitch: This allows to handle multiple conditions under. To handle each case we would use
 *NgSwitchCase followed by the condition, and if none of the cases are match we would use
 *NgSwitchDefault to render something if it failed.
+
+// Chapter 2
+
+Decorators: They are part of angular core. They tell the role of the element which could be
+a component, pipe, service, etc. And through them we can initialize them by giving them
+the requiered properties so that we can start working with them.
+
+Input: When we declare a property as an input. We are telling angular that this property will
+recieve data from another component in this case from the parent.
+
+Output: We return data to the parent component by trigerring an event. To do this we need to use
+the EventEmitter and we must specify the type of the value that we will return to the parent.
+ On the parent side, we need to add an event handler and in the template pass the '$event' as a parameter
+so that we method can get the data that the child send.
+
+Component Lifecycle:
+ - Constructor
+ - NgOnChanges
+ - NgOnInit
+ - NgDoCheck (Custom NgOnChanges)
+ - NgOnDestroy
