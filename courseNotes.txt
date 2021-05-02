@@ -22,7 +22,7 @@ NgSwitch: This allows to handle multiple conditions under. To handle each case w
 *NgSwitchCase followed by the condition, and if none of the cases are match we would use
 *NgSwitchDefault to render something if it failed.
 
-// Chapter 2
+// Module 2
 
 Decorators: They are part of angular core. They tell the role of the element which could be
 a component, pipe, service, etc. And through them we can initialize them by giving them
@@ -43,11 +43,45 @@ Component Lifecycle:
  - NgDoCheck (Custom NgOnChanges)
  - NgOnDestroy
 
-// Modulo 3
-
+// Module 3
 Pipes: They are another angular feature and they help us to transform text, numbers or dates.
  Angular provides built-in pipes such as dates, uppercase and currency.
 
 Directive: Help us to modify how our element behaves and also we can modify something in the
 DOM.
  It's not a good practice to dynamically modify the DOM since we have the Data binding.
+
+// Module 4 - Module & Routes
+Routing: When working with routes, we will add them in the app routing module. Basically
+we will add these routes under the 'import' property which will be an array of Routes.
+ This object contains two main properties: path and component.
+ Path: String that tells the path of the url.
+ Component: Element that will render under an specific url.
+
+If we want to redirect the user to an specific page, we can use the property 'redirectTo'. We
+could also use the property 'pathMatch' to check if the match is full or not.
+
+RouterLink: Through this directive, we will navigate to different sections of the web page.
+this will supply the 'href' of an a(anchor) tag so that the page doesn't refresh when going
+to a new section.
+
+RouterLinkActive: Through this directive we can pass a CSS class that will apply to element
+only when it's active.
+
+Services: They are in charge of retrieving data.
+
+Nested View: Angular provides a way that if multiple components use one or two components we can create
+a single component that in its template renders those and the 'router-outlet'.
+ And in the app-routing module create a new route and by making use of the children property (which is an array)
+define all the routes that will share this component.
+
+
+Lazy loading: It allows us to load assets, js files, css files, etc. Only when they are needed, this helps a lot
+to the performance of the application and the load speed.
+ If we want to apply lazy loading we need to have a modulized application.
+
+ IMPORTANT: In angular each module should have a route.
+
+Shared module: Contains elements that could be used in the application.
+
+Core module: Contains elements that are going to be use in the entire application.
